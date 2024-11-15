@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="gptlogo.png" type="image/x-icon">
+	<script src="script.js" type="text/javascript"></script>
+	<title>Chat GPT</title>
+</head>
+<body>
+	<div class="body-container">
+		<div class="sidebar">
+			<button id="add-chat-btn" onclick="newChat()">Добавить</button>
+			<ul id="chats-list">
+			</ul>
+		</div>
+		<div id="content" hidden>
+			<div class="chat-window">
+				<ul id="messages-list">
+				</ul>
+			</div>
+			<div class="input-position">
+				<div class="input-container">
+					<textarea type="text" id="prompt-input"></textarea>
+					<button id="send-btn" onclick="GetAnswer()">Отправить</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="footer">&nbsp;</div>
+</body>
+</html>
